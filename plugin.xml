@@ -27,10 +27,10 @@
 			</feature>
 		</config-file>
 
-		<source-file src="flatform/ios/AppsFlyerPlugin.m" />
+		<source-file src="platform/ios/AppsFlyerPlugin.m" />
 
-		<header-file src="flatform/ios/AppsFlyerPlugin.h" />
-    <header-file src="flatform/ios/AppsFlyerTracker.h" />
+		<header-file src="platform/ios/AppsFlyerPlugin.h" />
+    		<header-file src="platform/ios/AppsFlyerTracker.h" />
 	</platform>
 
 </plugin>
