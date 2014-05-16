@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="AppsFlyerPlugin"
+    version="2.2.0">
+
+  <name>AppsFlyerPlugin</name>
+	<author>Asaf Carmel</author>
+
+	<description>
+	</description>
+
+	<js-module src="www/appsflyer.js" name="AppsFlyerPlugin">
+        <clobbers target="AppsFlyerPlugin" />
+	</js-module>
+
+	<engines>
+		<engine name="cordova" version=">=3.0.0" />
+	</engines>
+
+	<!-- ios -->
+	<platform name="ios">
+
+		<config-file target="config.xml" parent="/*">
+			<feature name="AppsFlyerPlugin">
+				<param name="ios-package" value="AppsFlyerPlugin"/>
+			</feature>
+		</config-file>
+
+		<source-file src="flatform/ios/AppsFlyerPlugin.m" />
+
+		<header-file src="flatform/ios/AppsFlyerPlugin.h" />
+    <header-file src="flatform/ios/AppsFlyerTracker.h" />
+	</platform>
+
+</plugin>
