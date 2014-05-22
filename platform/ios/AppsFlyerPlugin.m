@@ -67,9 +67,13 @@
     //#endif
 }
 
-
-
-
+- (NSString *) getAppsFlyerUID;
+{
+    NSLog(@" -- AppsFlyer getAppsFlyerUID");
+    NSString* customeId = (NSString *) [AppsFlyerTracker sharedTracker].getAppsFlyerUID;
+    NSLog(@"customeId == %@",customeId);
+    return customeId;
+}
 
 
 
