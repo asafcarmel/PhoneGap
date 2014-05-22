@@ -27,7 +27,10 @@
     	cordova.exec(null, null, "AppsFlyerPlugin", "setCustomeUserId", [options.customeUserId]);
 	};
 	
-
+	AppsFlyer.prototype.getAppsFlyerUID = function () {
+        	cordova.exec(null, null, "AppsFlyerPlugin", "getAppsFlyerUID", []);
+    	};
+    	
 	global.cordova.addConstructor(function() {
 		if (!global.Cordova) {
 			global.Cordova = global.cordova;
